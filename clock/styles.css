@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-<!--setting full body of page-->
+
 body{
     height:110vh;
     display:flex;
@@ -13,16 +13,16 @@ body{
 
 
 }
-<!--for scrollbar-->
+
 ::-webkit-scrollbar{
     display: none;
 }
-<!--for alarm-->
+
 .alarm{
     border: 4px solid #050563a2;
     border-radius: 10px;
 }
-<!--for date and time-->
+
 .datetime{
     color:#fff;
     background: #10101E;
@@ -33,7 +33,7 @@ body{
     transition-property: background,box-shadow;
 
 }
-<!--when pointing to date and time it hovers-->
+
 .datetime:hover{
     background: #050563a2;
     box-shadow: 0 0 30px,#2E94E3;
@@ -51,7 +51,7 @@ body{
     align-items: center;
    justify-content: center;
 }
-<!--for last child of time span tag-->
+
 .time span:last-child{
     background:#2E94E3;
     font-size: 35px;
@@ -62,18 +62,18 @@ body{
     padding: 0,5px;
 
 }
-<!--for underlined-->
+
 hr{
     border:1px solid  #2E94E3;
     margin: 20px auto;
 }
-<!--for settingAlarm-->
+
 .setAlarm{
     display: flex;
     justify-content: space-around;
     border-radius: 10px;
 }
-<!--forcoloumn select-->
+
 .coloumn select{
     background:#10101E;
     color:#fff;
@@ -84,7 +84,7 @@ hr{
 
 
 }
-<!--for all the buttons of alarm like .btn-setAlarm,.btn-delete,.btn-stopAlarm-->
+
 #btn-setAlarm,.btn-delete,#btn-stopAlarm{
     padding:5px;
     color:#fff;
