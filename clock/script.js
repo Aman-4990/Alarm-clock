@@ -72,14 +72,14 @@ for(let i=59;i>=0;i--){
     i=i<10 ? "0"+i :i;
     let option =`<option value="${ampm}">${ampm}</option>`;
     selectMenu[2].firstElementChild.insertAdjacentHTML("afterend",option);
-  
+}
     for(let i=2; i>0;i--){
       let ampm = i== 1? "AM":"PM";
       let option = `<option value="${ampm}">${ampm}</option>`;
       selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
 
     }
-}
+
 
 
 //add alarm
@@ -93,11 +93,11 @@ function setAlarm(){
 
   }else{
     alarmCount++;
-    document.querySelector(".alarmList").innerHTML +=
+    document.querySelector(".alarmList").innerHTML +=`
     <div class="alarmLog" id="alarm${alarmCount}">
       <span id="span${alarmCount}">${time}</span>
       <button class="btn-delete" id="${alarmCount}" onClick="deleteAlarm(this.id)">Delete</button>
-    </div>;
+    </div>`;
     alarmTime=`${selectMenu[0].value}:${selectMenu[1].value}:00 {selectMenu[2].value}`;
     alarmListArr.push(alarmTime);
     console.log(document.querySelector(".btn-delete").value);
