@@ -51,6 +51,12 @@ body{
     align-items: center;
    justify-content: center;
 }
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
 
 .time span:last-child{
     background:#2E94E3;
