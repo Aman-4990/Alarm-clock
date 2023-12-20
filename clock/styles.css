@@ -26,7 +26,7 @@ body{
 .datetime{
     color:#fff;
     background: #10101E;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", sans-serif;
     width:400px;
     padding: 20px 15px;
     transition: 0.5s;
@@ -36,7 +36,7 @@ body{
 
 .datetime:hover{
     background: #050563a2;
-    box-shadow: 0 0 30px,#2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
     border-radius: 5.5px;
 }
 .date{
@@ -47,9 +47,10 @@ body{
 }
 .time{
     font-size:65px ;
-    display: flex;
+    display: flex
+    justify-content: center;
     align-items: center;
-   justify-content: center;
+   
 }
 .time span:not(:last-child){
     position: relative;
@@ -64,8 +65,9 @@ body{
     font-weight: 650;
     text-transform: uppercase;
     margin-top: 10px;
+    padding: 0 5px;
     border-radius: 3px;
-    padding: 0,5px;
+    
 
 }
 
@@ -80,7 +82,7 @@ hr{
     border-radius: 10px;
 }
 
-.coloumn select{
+.column select{
     background:#10101E;
     color:#fff;
     text-align: center;
@@ -91,7 +93,7 @@ hr{
 
 }
 
-#btn-setAlarm,.btn-delete,#btn-stopAlarm{
+#btn-setAlarm,.btn-delete,#stopAlarm{
     padding:5px;
     color:#fff;
     background: #2E94E3;
@@ -106,14 +108,14 @@ hr{
 .btn-delete{
     margin-left: 50px;
 }
-#btn-setAlarm,.btn-delete,#btn-stopAlarm{
+#btn-setAlarm:hover,.btn-delete:hover,#stopAlarm:hover{
     cursor: pointer;
     background:  #2E94E3;
     box-shadow: 0 0 30px  #2E94E3;
 }
 h3{
     color: #fff;
-    font-family:'Segoe UI',  sans-serif;
+    font-family:"Segoe UI",  sans-serif;
     font-size: 25px;
     font-weight: 950;
     text-align: center;
