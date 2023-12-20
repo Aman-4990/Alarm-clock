@@ -32,7 +32,7 @@ function updateClock(){
           }
     
           Number.prototype.pad=function(digits){
-            for(var n=this.toString();n.length<digits;n=0+n);
+            for(var n = this.toString();n.length<digits;n=0+n);
             return n;
           }
           var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -90,9 +90,7 @@ function setAlarm(){
   let time=`${selectMenu[0].value}:${selectMenu[1].value}:00 ${selectMenu[2].value}`;
   if(time.includes("setHour") || time.includes("setMinute") || time.includes("AM/PM")){
     alert("Please,Select Valid Input");
-
-
-  }else{
+}else{
     alarmCount++;
     document.querySelector(".alarmList").innerHTML +=`
     <div class="alarmLog" id="alarm${alarmCount}">
